@@ -12,4 +12,10 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  optimizeDeps: {
+    include: ['react-hot-toast'],
+  },
+  ssr: {
+    noExternal: ['react-hot-toast'], // Optional: helpful if you're using SSR or deploying to platforms like Render
+  },
 })
