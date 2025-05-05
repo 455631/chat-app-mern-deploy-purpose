@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://real-time-chat-8u5a.onrender.com",
+    origin: "https://chat-app-mern-deploy-purpose.onrender.com",
     credentials: true,
   })
 );
